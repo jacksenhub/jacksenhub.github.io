@@ -1327,7 +1327,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #ffff39;
+    background: #ffb0ff;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -2961,4 +2961,32 @@ header.header {
   .comments {
     padding: 10px 15px;
   }
+}
+.post-block,
+.sidebar-inner {
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.post-title {
+  border-left: 4px solid #2196f3;
+  padding-left: 12px;
+}
+.post-body a {
+  color: #2196f3;
+  text-decoration: none;
+  border-bottom: 1px solid #2196f3;
+}
+.post-body a:hover {
+  color: #ff9800;
+  border-color: #ff9800;
+}
+pre,
+code {
+  border-radius: 8px;
+}
+.avatar img:hover {
+  transform: rotate(360deg);
+  transition: 1s ease;
 }
