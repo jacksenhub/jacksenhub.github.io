@@ -13,7 +13,7 @@
   --table-row-odd-bg-color: #f9f9f9;
   --table-row-hover-bg-color: #f5f5f5;
   --menu-item-bg-color: #f5f5f5;
-  --theme-color: #fff;
+  --theme-color: #f2f0e9;
   --btn-default-bg: #fff;
   --btn-default-color: #555;
   --btn-default-border-color: #555;
@@ -42,7 +42,7 @@
     --table-row-odd-bg-color: #282828;
     --table-row-hover-bg-color: #363636;
     --menu-item-bg-color: #555;
-    --theme-color: #171717;
+    --theme-color: #191c1a;
     --btn-default-bg: #222;
     --btn-default-color: #ccc;
     --btn-default-border-color: #555;
@@ -225,7 +225,7 @@ body {
   background: var(--body-bg-color);
   box-sizing: border-box;
   color: var(--text-color);
-  font-family: Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Songti SC, SimSun, serif, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 1em;
   line-height: 2;
   min-height: 100%;
@@ -238,7 +238,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: Segoe UI, Microsoft YaHei, sans-serif, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: STKaiti, KaiTi, FangSong, serif, Songti SC, SimSun, serif, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-weight: bold;
   line-height: 1.5;
   margin: 30px 0 15px;
@@ -1304,7 +1304,7 @@ pre code {
   color: var(--brand-hover-color);
 }
 .site-title {
-  font-family: Segoe UI, Microsoft YaHei, sans-serif, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: STKaiti, KaiTi, FangSong, serif, Songti SC, SimSun, serif, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 1.375em;
   font-weight: normal;
   line-height: 1.5;
@@ -1446,7 +1446,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #d69fa7;
+    background: #6b4e60;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1920,7 +1920,7 @@ pre code {
 }
 .reading-progress-bar {
   --progress: 0;
-  background: #10a37f;
+  background: #a63d32;
   height: 3px;
   position: fixed;
   z-index: 50;
@@ -2077,7 +2077,7 @@ pre code {
   width: 4px;
 }
 .post-body {
-  font-family: Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Songti SC, SimSun, serif, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   overflow-wrap: break-word;
 }
 @media (min-width: 1200px) {
@@ -2266,7 +2266,7 @@ pre code {
 }
 .posts-expand .post-meta-container {
   color: #999;
-  font-family: Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+  font-family: Songti SC, SimSun, serif, 'PingFang SC', 'Microsoft YaHei', sans-serif;
   font-size: 0.75em;
   margin-top: 3px;
 }
@@ -3082,72 +3082,92 @@ header.header {
   }
 }
 :root {
-  --body-bg-color: #fff;
-  --content-bg-color: #fff;
-  --card-bg-color: #f7f7f8;
-  --text-color: #0d0d0d;
-  --link-color: #0e8f70;
-  --link-hover-color: #10a37f;
-  --link-decoration-color: rgba(16,163,127,0.28);
-  --border-color: #e5e7eb;
+  --body-bg-color: #f2f0e9;
+  --content-bg-color: #fcfbf7;
+  --card-bg-color: #f4f2eb;
+  --text-color: #2c302e;
+  --link-color: #4c6b65;
+  --link-hover-color: #a63d32;
+  --link-decoration-color: rgba(76,107,101,0.3);
+  --border-color: rgba(32,36,34,0.14);
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --body-bg-color: #171717;
-    --content-bg-color: #212121;
-    --card-bg-color: #2f2f2f;
-    --text-color: #ececec;
-    --link-color: #66d9b8;
-    --link-hover-color: #8ee8cd;
-    --link-decoration-color: rgba(102,217,184,0.32);
-    --border-color: #3a3a3a;
+    --body-bg-color: #191c1a;
+    --content-bg-color: #222624;
+    --card-bg-color: #2b302d;
+    --text-color: #e4e1d8;
+    --link-color: #9ebbb4;
+    --link-hover-color: #d48678;
+    --link-decoration-color: rgba(158,187,180,0.3);
+    --border-color: rgba(228,225,216,0.13);
   }
 }
 body {
-  background: var(--body-bg-color);
+  background-color: var(--body-bg-color);
+  background-image: radial-gradient(ellipse at 8% 9%, rgba(32,36,34,0.08), transparent 23%), radial-gradient(ellipse at 92% 28%, rgba(76,107,101,0.07), transparent 26%), repeating-linear-gradient(0deg, rgba(32,36,34,0.018) 0, rgba(32,36,34,0.018) 1px, transparent 1px, transparent 5px);
   color: var(--text-color);
   letter-spacing: 0;
 }
 .headband {
-  background: #10a37f;
+  background: #a63d32;
   height: 3px;
 }
 .site-brand-container {
-  background: #0d0d0d;
+  background-color: #202422;
+  background-image: radial-gradient(ellipse at 20% 50%, rgba(255,255,255,0.08), transparent 38%), radial-gradient(ellipse at 88% 18%, rgba(76,107,101,0.35), transparent 34%);
   border-bottom: 1px solid rgba(255,255,255,0.08);
   box-shadow: none;
+  overflow: hidden;
+  position: relative;
+}
+.site-brand-container::after {
+  border: 1px solid rgba(255,255,255,0.18);
+  color: rgba(255,255,255,0.76);
+  content: "杰";
+  font-family: "STKaiti", "KaiTi", serif;
+  font-size: 14px;
+  line-height: 26px;
+  position: absolute;
+  right: 18px;
+  text-align: center;
+  top: 18px;
+  width: 26px;
 }
 .site-meta {
-  padding: 30px 18px 24px;
+  padding: 34px 18px 28px;
 }
 .brand {
   letter-spacing: 0;
 }
 .site-title {
-  font-weight: 650;
+  font-family: "STKaiti", "KaiTi", "FangSong", serif;
+  font-size: 1.65em;
+  font-weight: 600;
 }
 .site-subtitle {
   color: rgba(255,255,255,0.68);
-  margin-top: 12px;
+  font-family: "FangSong", "STFangsong", serif;
+  margin-top: 13px;
 }
 .site-nav,
 .sidebar-inner,
 .post-block {
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+  background: rgba(252,251,247,0.94);
+  border: 1px solid rgba(32,36,34,0.14);
+  border-radius: 4px;
+  box-shadow: 0 8px 28px rgba(32,36,34,0.055);
 }
 @media (prefers-color-scheme: dark) {
-  .site-brand-container {
-    background: #0d0d0d;
+  body {
+    background-image: radial-gradient(ellipse at 8% 9%, rgba(228,225,216,0.05), transparent 23%), radial-gradient(ellipse at 92% 28%, rgba(158,187,180,0.05), transparent 26%);
   }
   .site-nav,
   .sidebar-inner,
   .post-block {
-    background: #212121;
-    border-color: #3a3a3a;
-    box-shadow: none;
+    background: rgba(34,38,36,0.96);
+    border-color: rgba(228,225,216,0.13);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
   }
 }
 .site-nav {
@@ -3155,97 +3175,100 @@ body {
   padding: 8px 10px;
 }
 .menu .menu-item a {
-  border-radius: 6px;
-  color: #0d0d0d;
+  border-radius: 3px;
+  color: #202422;
   margin: 2px 0;
   padding: 9px 12px;
   transition: background 0.18s ease, color 0.18s ease;
 }
 .menu .menu-item a:hover,
 .menu .menu-item-active a {
-  background: #f3f4f6;
-  color: #0d0d0d;
+  background: rgba(76,107,101,0.09);
+  color: #843027;
 }
 .menu .menu-item a i {
-  color: #6b7280;
+  color: #78817b;
 }
 .menu .menu-item a:hover i,
 .menu .menu-item-active a i {
-  color: #10a37f;
+  color: #a63d32;
 }
 @media (prefers-color-scheme: dark) {
   .menu .menu-item a {
-    color: #ececec;
+    color: #e4e1d8;
   }
   .menu .menu-item a:hover,
   .menu .menu-item-active a {
-    background: #2f2f2f;
-    color: #fff;
-  }
-  .menu .menu-item a i {
-    color: #a3a3a3;
+    background: rgba(158,187,180,0.1);
+    color: #d48678;
   }
 }
 .badge {
-  background: #f3f4f6;
-  border: 1px solid #e5e7eb;
-  border-radius: 999px;
-  color: #6b7280;
-  padding: 1px 7px;
+  background: transparent;
+  border: 1px solid rgba(32,36,34,0.24);
+  border-radius: 2px;
+  color: #78817b;
+  padding: 1px 6px;
 }
 .post-block {
-  padding: 32px;
+  padding: 34px;
   position: relative;
 }
 .post-block::before {
-  background: #10a37f;
-  border-radius: 8px 0 0 8px;
+  background: linear-gradient(180deg, transparent, #454b47 18%, #454b47 82%, transparent);
   bottom: 24px;
   content: "";
   left: 0;
+  opacity: 0.75;
   position: absolute;
   top: 24px;
-  width: 3px;
+  width: 2px;
 }
 .posts-expand .post-title {
   border-left: 0;
-  font-size: 1.55em;
-  font-weight: 650;
-  line-height: 1.35;
+  font-family: "STKaiti", "KaiTi", "FangSong", serif;
+  font-size: 1.65em;
+  font-weight: 600;
+  line-height: 1.45;
   padding-left: 0;
 }
 .post-title-link::before {
-  background: #10a37f;
+  background: #a63d32;
   height: 2px;
 }
 .post-meta {
-  color: #6b7280;
+  color: #78817b;
+  font-family: "FangSong", "STFangsong", serif;
 }
 .post-body {
-  font-size: 1.02em;
-  line-height: 1.88;
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", serif;
+  font-size: 1.03em;
+  line-height: 2;
 }
 .post-body h2,
 .post-body h3 {
-  color: #0d0d0d;
+  color: #202422;
+  font-family: "STKaiti", "KaiTi", "FangSong", serif;
   letter-spacing: 0;
-  margin-top: 1.8em;
+  margin-top: 1.9em;
 }
 .post-body h2 {
   border-bottom: 1px solid var(--border-color);
-  padding-bottom: 0.35em;
+  padding-bottom: 0.38em;
 }
 .post-body h2::before {
-  color: #10a37f;
-  content: "#";
-  margin-right: 0.45em;
+  color: #a63d32;
+  content: "◆";
+  font-size: 0.58em;
+  margin-right: 0.7em;
+  vertical-align: middle;
 }
 .post-body blockquote {
-  background: #f7f7f8;
-  border-left: 3px solid #10a37f;
-  border-radius: 0 8px 8px 0;
-  color: #3f3f46;
-  padding: 14px 18px;
+  background: rgba(76,107,101,0.065);
+  border-left: 3px solid #4c6b65;
+  border-radius: 0 4px 4px 0;
+  color: #4b524e;
+  padding: 15px 19px;
 }
 .post-body a {
   border-bottom: 1px solid var(--link-decoration-color);
@@ -3253,98 +3276,106 @@ body {
   text-decoration: none;
 }
 .post-body a:hover {
-  border-color: #10a37f;
+  border-color: #a63d32;
   color: var(--link-hover-color);
 }
 pre,
 code,
 figure.highlight {
-  border-radius: 8px;
+  border-radius: 4px;
 }
 figure.highlight {
-  border: 1px solid #e5e7eb;
+  border: 1px solid rgba(32,36,34,0.14);
   box-shadow: none;
 }
 .post-tags a,
 .tag-cloud a {
-  background: #f7f7f8;
-  border: 1px solid #e5e7eb;
-  border-radius: 999px;
-  color: #3f3f46;
+  background: transparent;
+  border: 1px solid rgba(32,36,34,0.24);
+  border-radius: 3px;
+  color: #454b47;
   display: inline-block;
   margin: 5px 6px 5px 0;
-  padding: 3px 10px;
+  padding: 3px 9px;
 }
 .post-tags a:hover,
 .tag-cloud a:hover {
-  background: rgba(16,163,127,0.08);
-  border-color: rgba(16,163,127,0.26);
-  color: #0e8f70;
+  background: rgba(166,61,50,0.07);
+  border-color: rgba(166,61,50,0.38);
+  color: #843027;
 }
 .sidebar-inner {
   padding: 18px;
 }
 .site-author-image {
-  border: 2px solid #d9d9e3;
-  box-shadow: none;
+  border: 2px solid rgba(32,36,34,0.24);
+  box-shadow: 0 5px 18px rgba(32,36,34,0.1);
+  filter: grayscale(25%) contrast(92%);
 }
 .avatar img {
-  transition: border-color 0.2s ease, transform 0.2s ease;
+  transition: border-color 0.2s ease, filter 0.2s ease, transform 0.2s ease;
 }
 .avatar img:hover {
-  border-color: #10a37f;
-  transform: scale(1.02);
+  border-color: #a63d32;
+  filter: grayscale(0) contrast(100%);
+  transform: scale(1.015);
+}
+.site-author-name {
+  font-family: "STKaiti", "KaiTi", serif;
 }
 .site-state-item-count {
-  color: #0e8f70;
+  color: #843027;
 }
 .pagination .page-number.current {
-  background: #0d0d0d;
-  border-color: #0d0d0d;
-  border-radius: 6px;
-  color: #fff;
+  background: #202422;
+  border-color: #202422;
+  border-radius: 3px;
+  color: #fcfbf7;
 }
 .back-to-top {
-  background: #0d0d0d;
-  border-radius: 8px 8px 0 0;
+  background: #202422;
+  border-radius: 4px 4px 0 0;
 }
 @media (prefers-color-scheme: dark) {
   .post-body h2,
   .post-body h3 {
-    color: #fff;
+    color: #eeeae0;
   }
   .post-body blockquote {
-    background: #2f2f2f;
-    color: #d4d4d4;
+    background: rgba(158,187,180,0.08);
+    color: #d2d0c8;
   }
   .post-tags a,
   .tag-cloud a {
-    background: #2f2f2f;
-    border-color: #3a3a3a;
-    color: #d4d4d4;
+    border-color: rgba(228,225,216,0.2);
+    color: #d2d0c8;
   }
   .post-tags a:hover,
   .tag-cloud a:hover {
-    background: rgba(102,217,184,0.1);
-    border-color: rgba(102,217,184,0.28);
-    color: #8ee8cd;
+    background: rgba(212,134,120,0.08);
+    border-color: rgba(212,134,120,0.35);
+    color: #d48678;
   }
   .site-state-item-count {
-    color: #8ee8cd;
+    color: #d48678;
   }
   .pagination .page-number.current,
   .back-to-top {
-    background: #ececec;
-    border-color: #ececec;
-    color: #0d0d0d;
+    background: #dedbd2;
+    border-color: #dedbd2;
+    color: #202422;
   }
 }
 @media (max-width: 767px) {
+  .site-brand-container::after {
+    right: 54px;
+    top: 14px;
+  }
   .site-meta {
-    padding: 22px 14px 18px;
+    padding: 24px 14px 20px;
   }
   .post-block {
-    padding: 24px 18px;
+    padding: 26px 19px;
   }
   .post-block::before {
     bottom: 18px;
