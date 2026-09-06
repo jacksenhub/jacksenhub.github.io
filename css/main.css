@@ -1444,7 +1444,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #398a70;
+    background: #fb4152;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3456,4 +3456,43 @@ hr {
   .post-block {
     padding: 26px 19px;
   }
+}
+.posts-expand .post-block {
+  position: relative;
+  overflow: hidden;
+}
+.posts-expand .post-block::before {
+  content: "";
+  display: block !important;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.3;
+  pointer-events: none;
+  z-index: 0;
+}
+.posts-expand .post-block > * {
+  position: relative;
+  z-index: 1;
+}
+.posts-expand .post-block:nth-of-type(1)::before {
+  background-image: url("/images/covers/lion.jpg");
+}
+.posts-expand .post-block:nth-of-type(2)::before {
+  background-image: url("/images/covers/samoyed.jpg");
+}
+.posts-expand .post-block:nth-of-type(3)::before {
+  background-image: url("/images/covers/spyfamily.jpg");
+}
+.posts-expand .post-block:nth-of-type(4)::before {
+  background-image: url("/images/covers/anime.jpg");
+  background-position: center 18%;
+}
+.posts-expand .post-block:nth-of-type(5)::before {
+  background-image: url("/images/covers/miffy.jpg");
 }
