@@ -1444,7 +1444,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #fb4152;
+    background: #01fffa;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3495,4 +3495,6 @@ hr {
 }
 .posts-expand .post-block:nth-of-type(5)::before {
   background-image: url("/images/covers/miffy.jpg");
+  background-size: contain;
+  background-position: center;
 }
