@@ -1444,7 +1444,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #01fffa;
+    background: #2565de;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -3494,7 +3494,8 @@ hr {
   background-position: center 18%;
 }
 .posts-expand .post-block:nth-of-type(5)::before {
-  background-image: url("/images/covers/miffy.jpg");
-  background-size: contain;
-  background-position: center;
+  background-image: url("/images/covers/miffy.jpg"), linear-gradient(90deg, #fde0e0 0%, #fff2cf 35%, #e6f5d4 65%, #d9eaf6 100%);
+  background-size: contain, cover;
+  background-position: center 42%, center;
+  background-repeat: no-repeat, no-repeat;
 }
